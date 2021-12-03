@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <!-- product item info -->
+    <div id="product-item" class="full-width-content">
+        <div class="prod-flex-container">
+            <div class='prod-flex-item'>
+                <div class='img-col prod-vanilla'>
+                </div>
+            </div>
+            <div class='prod-flex-item'>
+                <div class='desc-col'>
+                    <h6>Vanilla Slice</h6>
+                    <h2>$4.50</h2>
+                    <h4 class="info">Our special cake slice that consists of a thick vanilla custard sandwiched between flaky puff pastry perfect for dinner parties or simply enjoy it at home as a weeknight treat.</h4>
+                    <div class="section-cta">
+                        <a href="{{ url_for('orderForm', item_name='Vanilla Slice', item_price='4.50') }}"><button class="cta orange-solid">Order now</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- Other products: sample products -->
+    <div id="our-selection" class="full-width-content other-prods">
+        <div class="section-heading">
+            <h2 class="pacifico-title">Looking for something else?</h2>
+            <h3 class="subtitle">We	&#39;ve got a range of goodies just for you</h4>
+        </div>
+        <div class="section-products">
+            <div class="product-cards product-card1">
+                <div class="card-contents">
+                    <a href="/menu"><div class="cat-img"></div></a>
+                      <! -- img src="https://i.ibb.co/TTvbmbv/donut-category.jpg" alt="image source from https://www.pexels.com/photo/close-up-photo-of-donuts-2955820/ " -->
+                    <div class="card-details">
+                        <h2>Donuts</h2>
+                        <h5><a href="/menu">See more > </a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cards product-card2">
+                <div class="card-contents">
+                    <a href="/menu"><div class="cat-img"></div></a>
+                     <! -- img src="https://i.ibb.co/NVP9rBK/cakes-category.jpg" alt="image source from https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/" -->
+                    <div class="card-details">
+                        <h2>Cakes</h2>
+                        <h5><a href="/menu">See more > </a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="product-cards product-card3">
+                <div class="card-contents">
+                    <a href="/menu"><div class="cat-img"></div></a>
+                    <! -- img src="https://i.ibb.co/xCrjmzT/tarts-category.jpg" alt="image source from https://1freewallpapers.com/blueberry-tarts" -->
+                    <div class="card-details">
+                        <h2>Tarts</h2>
+                        <h5><a href="/menu">See more ></a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta">
+            <a href="/menu"><button class="cta orange-solid">Shop the menu</button></a>
+        </div>
+    </div>
+{% endblock %}

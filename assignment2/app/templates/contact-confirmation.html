@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- confirmation details -->
+    <div id="confirmation-section">
+        <div class="med-width-content center">
+            <h1>Your message has been sent!</h1>
+            <p>Thank you for sending us an inquiry. Keep an eye on your email to get a response from us.</p>
+            <div class="submission-summary">
+                <h6>Customer Inquiry</h6>
+                <div class="info">
+                    <p class="input-field">From: <span class="name">{{name}}</span></p>
+                    <p class="input-field">Email: {{email}}</p>
+                    <p class="input-field">Message: {{message}}</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta center">
+            <a href="/menu"><button class="cta white-solid">Continue shopping</button></a>
+            <a href="/index"><button class="cta orange-solid">Go back to home</button></a>
+            
+        </div>
+    </div>
+{% endblock %}

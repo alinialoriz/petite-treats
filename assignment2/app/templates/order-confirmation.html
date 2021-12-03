@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- confirmation details -->
+    <div id="confirmation-section">
+        <div class="med-width-content center">
+            <h1>Thank you for ordering!</h1>
+            <p>Your order is now in the oven. Look out for an email from us to get updates on your order.</p>
+        </div>
+        <div class="submission-summary">
+            <h6>Order received</h6>
+                <div class="info">
+                    <p class="input-field">Name: <span class="name">{{name}}</span></p>
+                    <p class="input-field">Email: {{email}}</p>
+                    <p class="input-field">Product: {{item_name}}</p>
+                    <p class="input-field">Per unit price: ${{item_price}}</p>
+                    <p class="input-field">Quantity: {{quantity}}</p>
+                    <p class="input-field total-price">Total Price: ${{total_price}}</p>
+                    <p class="message">Payment details can be found in the order confirmation email.</p>
+                </div>
+            </div>
+        <div class="section-cta center">
+            <a href="/menu"><button class="cta white-solid">Continue shopping</button></a>
+            <a href="/index"><button class="cta orange-solid">Go back to home</button></a>
+            
+        </div>
+    </div>
+{% endblock %}

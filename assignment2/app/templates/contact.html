@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+<!-- here we add our contact forms -->
+{% block content %}
+<div class="contact full-width-content">
+    <h6>Contact us for inquiries</h6>
+    <form class="form" action="{{ url_for('get_contact') }}" onsubmit="return validateContactForm(this)" method=post>
+        <div>
+            <!-- name forms -->
+            <div class="form-group">
+                {{ form.name.label(class='input-label') }} <br>
+                {{ form.name(placeholder='Your name', class='input-field') }}
+                <span class="input-check">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+				</span>
+				<br><small class="input-alert"></small>
+            </div>
+            <!-- email forms -->
+            <div class="form-group">
+                {{ form.email.label(class='input-label') }} <br>
+                {{ form.email(placeholder='Your e-mail', class='input-field') }}
+                <span class="input-check">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+				</span>
+				<br><small class="input-alert"></small>
+            </div>
+            <!-- Content of your request -->
+            <div class="form-group">
+                {{ form.message.label(class='input-label') }}<br>
+                {{ form.message(placeholder='What would you like to inquire about?', class='input-field') }}
+                <span class="input-check">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+				</span>
+				<br><small class="input-alert"></small>
+            </div>
+            <!-- Submit button -->
+            <div class="form-group submit">
+                {{ form.submit(class='cta orange-solid') }}
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+

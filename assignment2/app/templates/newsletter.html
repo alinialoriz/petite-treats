@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+<!-- News Letter forms -->
+{% block content %}
+
+<div id="newsletter" class="section-form full-width-content">
+    <h6>JOIN OUR NEWSLETTER</h6>
+    <hr>
+    <form class="form" action="/newsletter" onsubmit="return validateNeswletterForm(this)" method="POST">
+        <div class="form-group">
+            <label for="name" class="input-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" class="input-field" >
+            	<span class="input-check">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+				</span>
+				<br><small class="input-alert"></small>
+		</div>
+		<div class="form-group">
+			<label for="email" class="input-label">Email</label>
+				<input type="email" name="email" id="email" class="input-field" placeholder="yourname@mail.com">
+					<span class="input-check">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+					</span>
+					<br><small class="input-alert"></small>
+		</div>
+        <div class="form-group">
+            <label for="product" class="input-label">Product of interest</label>
+            <select name="product" class="form-control input-field" required >
+                <option value="" disabled selected>Select your product interest</option>
+                <option value="Apple Cake Slice">Apple Cake Slice</option>
+                <option value="Custard Tart">Custard Tart</option>
+                <option value="Donuts">Donuts</option>
+                <option value="Randy Tart">Randy Tart</option>
+                <option value="Raspbery Cheesecake">Raspberry Cheesecake</option>
+                <option value="Vanilla Slice">Vanilla Slice</option>
+            </select>
+        </div>
+        <div class="form-group bday">
+            <div class="dob-m">
+                <label for="dobM" class="input-label">Date of Birth</label>
+                <select name="dobM" class="form-control input-field" required >
+                    <option value="" disabled selected>MM</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+            <div class="dob-d">
+                <label for="dobD" class="input-label"></label>
+                <select name="dobD" class="form-control input-field" required >
+                    <option value="" disabled selected>DD</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group consent">
+            <input type="checkbox" name="agree" id="agree" value="yes" class="input-field"/>
+            <label for="agree" class="input-label">I consent to receive Petite Treats newsletters by email. I understand I may opt out at any time using the unsubscribe link provided in all communications.</label>
+            <span class="input-check">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+			</span>
+			<br><small class="input-alert"></small>
+		</div>
+        <div class="form-group submit">
+            <input type="submit" value="SIGN UP NOW" class="cta orange-solid input-submit">
+        </div>
+    </form>
+</div>
+        
+
+{% endblock %}

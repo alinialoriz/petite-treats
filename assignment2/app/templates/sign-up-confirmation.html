@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- confirmation details -->
+    <div id="confirmation-section">
+        <div class="med-width-content center">
+            <h1>Welcome to the family!</h1>
+            <p>Thank you for signing up to our newsletter.</p>
+            <div class="submission-summary">
+                <h6>Memeber added!!!</h6>
+                <div class="info">
+                    <p class="input-field">Name: <span class="name">{{name}}</span></p>
+                    <p class="input-field">Email: {{email}}</p>
+                    <p class="input-field">Date of Birth: {{birthday}}</p>
+                    <p class="input-field">Product Interest: {{product}}</p>
+                    <p class="message">Keep an eye on your email to get the latest deals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-cta center">
+            <a href="/menu"><button class="cta white-solid">Continue shopping</button></a>
+            <a href="/index"><button class="cta orange-solid">Go back to home</button></a>
+            
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+<!-- News Letter forms -->
+{% block content %}
+
+<div id="newsletter" class="section-form full-width-content">
+    <h6>Order From</h6>
+    <hr>
+    <form class="form" action="/order" onsubmit="return validateOrderForm(this)" method="POST">
+        <div class="form-group">
+            <label for="item-name" class="input-label">Product</label></label>
+            <input type="text" id="item-name" name="item-name" placeholder="Item name" class="input-field" value= "{{orderItem}}" readonly="readonly">
+		</div>
+		<div class="form-group">
+            <label for="item-price" class="input-label">Per unit price ($)</label></label>
+            <input type="text" id="item-price" name="item-price" placeholder="Item price" class="input-field" value= "{{item_price}}" readonly="readonly">
+		</div>
+		<div class="form-group">
+            <label for="quantity" class="input-label">Quantity</label>
+            <select name="quantity" class="form-control input-field" required >
+                <option value="" disabled selected>How many do you want?</option>
+                <option value="1">Single deal (1pc)</option>
+                <option value="2">Duo deal (2pcs)</option>
+                <option value="3">Box of 3</option>
+                <option value="6">Box of 6</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name" class="input-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" class="input-field" >
+            	<span class="input-check">
+					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-exclamation-circle"></i>
+				</span>
+				<br><small class="input-alert"></small>
+		</div>
+		<div class="form-group">
+			<label for="email" class="input-label">Email</label>
+				<input type="email" name="email" id="email" class="input-field" placeholder="yourname@mail.com">
+					<span class="input-check">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+					</span>
+					<br><small class="input-alert"></small>
+		</div>
+        <div class="form-group consent">
+            <input type="checkbox" name="pickup" id="pickup" value="yes" class="input-field"/ checked>
+            <label for="pickup" class="input-label">Pick up in-store.</label>
+            <span class="input-check">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+			</span>
+			<br><small class="input-alert"></small>
+		</div>
+        <div class="form-group submit">
+            <input type="submit" value="Confirm Order" class="cta orange-solid input-submit">
+        </div>
+    </form>
+</div>
+        
+
+{% endblock %}

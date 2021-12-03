@@ -1,0 +1,71 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Petite Treats sells traditional Australian baked goods, from donuts, tarts to cakes, but with a modern twist. Shop our online bakery or visit use in store.">
+      {% if title %}
+      <title>{{ title }} - Petite Treats QLD</title>
+      {% else %}
+      <title>Petite Treats QLD</title>
+      {% endif %}
+      <!-- add the right css file -->
+        {% block styles %}
+        <link rel="stylesheet" href="{{url_for('.static', filename='styles.css')}}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <script src="/static/script.js"></script>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <a href="/index" class="pacifico-title">PT.</a>
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/about">About</a>
+                <a href="/weekly-specials">Weekly Specials</a>
+                <a href="/menu">Menu</a>
+                <a href="/contactus" >Contact</a>
+                <a href="/newsletter">Newsletter</a>
+            </div>
+          </div>
+        
+        <hr>
+        {% block content %}{% endblock %}
+        <footer class="full-width-content">
+          <div class="footer-container">
+              <! -- footer column 1 -->
+              <div class="foot-col">
+                  <p class="pacifico-title"><a href="/index">Petite Treats</a></p>
+                  <p>&copy; 2012&#8211;2020</p>
+                  <p>123 Prize Lane, Kirwan, QLD</p>
+              </div>
+              <! -- footer column 2 -->
+              <div class="foot-col">
+                  <h2><a href="/menu">Menu</a></h2>
+                  <h2><a href="/weekly-specials">Weekly Specials</a></h2>
+                  <h2><a href="/about">About</a></h2>
+              </div>
+              <! -- footer column 3 -->
+              <div class="foot-col">
+                  <h2><a href="/contactus">Get in touch</a></h2>
+                  <p>Customer inquiries: 0455 5555 555</p>
+                  <p>Catering inquiries: 0433 3333 333</p>
+              </div>
+          </div>
+        </footer>
+    </body>
+</html>

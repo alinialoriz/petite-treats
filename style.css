@@ -1,0 +1,786 @@
+/* Remove default html and body margins */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.full-width-content {
+    max-width:100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.med-width-content {
+    max-width:60%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+h3.subtitle {
+    margin-top:10px;
+    letter-spacing: 1px
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Set font family */
+h1, .pacifico-title, nav > ul > li:nth-child(1) {
+    font-family: Pacifico;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: Quicksand;
+    font-weight: 700;
+}
+
+h3, li, button, input[type=submit]  {
+    font-family: Quicksand;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: Quicksand;
+    font-weight: 500;
+}
+
+h5, input[type=text] {
+    font-family: Quicksand;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: Arvo;
+    font-weight: 700;
+}
+
+p, input::placeholder{
+    font-family: Quicksand;
+    font-weight: 300;
+}
+
+/* Set font sizes */
+
+h6 {
+    font-size: 1.8em;
+}
+
+footer h2, footer p  {
+    font-size: 1em;
+}
+
+footer .pacifico-title {
+    font-size: 1.4em;
+}
+
+/* Set text-transform */
+h6, button, input[type=submit], li {
+    text-transform: uppercase;
+}
+
+/* Set button styling*/
+.cta {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+button, input[type=submit] {
+    font-size: 1em;
+}
+
+.white-solid {
+    background-color: #FFFFFF;
+    color: #FF6700;
+    border: none;
+}
+
+.orange-solid {
+    border: 2px solid #FF6700;
+    background-color: transparent;
+    color: #FF6700;
+}
+
+
+.white-solid:hover,
+.orange-solid:hover {
+    background: #FF6700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+/* Nav bar and Footer styling*/
+nav, footer {
+    background-color: #E8B78E;
+}
+
+nav {
+    padding: 11px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav > ul > li:nth-child(1) {
+    background: #005B48;
+    padding:10px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+nav > ul > li:nth-child(1):hover {
+    background: #FF6700;
+}
+
+nav > ul > li:nth-child(1) a {
+    color:  #FFFFFF;
+}
+
+nav > ul > li:nth-child(2), 
+nav > ul > li:nth-child(3), 
+nav > ul > li:nth-child(4) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+nav li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav > ul > li:nth-child(3), 
+nav > ul > li:nth-child(4) {
+    margin-right: 32px;
+}
+
+.nav-right {
+    float: right;
+}
+.nav-left {
+    float: left;
+}
+
+nav li:nth-child(2):hover,
+nav li:nth-child(3):hover,
+nav li:nth-child(4):hover{
+   border-bottom: 3px solid #FF6700;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:80px 0px; 
+    line-height: 35px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #FF6700;
+    cursor: pointer;
+}
+
+/* Home page: Hero banner styling */
+#hero-section {
+    background: #FFEACE;
+    height: 500px;
+    position: relative;
+}
+
+#hero-section .left-side {
+    position: absolute;
+    left: 50px;
+    top: 32%;
+    width: 35%;
+    text-align: left;
+}
+ 
+.left-side .title {
+    display: inline-block;
+}
+.left-side .subtitle {
+    margin-top: 1px;
+    margin-bottom: 21px;
+}
+
+.left-side img {
+    width: 200px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+#hero-section .right-side {
+    position: absolute;
+    left: 43%;
+    width: 54%;
+    height: 500px;
+    background-image: url("https://i.ibb.co/dbL5p6V/hero-img.jpg"); 
+    /*banner img sourced from https://www.pexels.com/photo/pastries-on-tray-1129510/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels */
+    background-color: #FFEACE;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+    
+/* Home page: Our selection, Hear the people and Get updates styling */
+#our-selection,
+#hear-the-people,
+#get-updates {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#our-selection .section-heading,
+#hear-the-people .pacifico-title,
+#get-updates .section-heading {
+    text-align: center;
+}
+
+.section-heading h6 {
+    color: #005B48;
+}
+
+.section-heading h3 {
+    color: #FF6700;
+}
+
+/*Home page- Our selection, Menu page and Weekly Specials*/
+
+.section-products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.product-cards{
+    position: relative;
+    width:250px;
+    height: 330px;
+    background: #005B48;
+    padding:10px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.card-contents {
+    position: absolute;
+    width: inherit;
+}
+
+.product-card1 .cat-img,
+.product-card2 .cat-img,
+.product-card3 .cat-img {
+    height:250px;
+}
+
+.product-card1 .cat-img {
+    background-image: url("https://i.ibb.co/TTvbmbv/donut-category.jpg"); 
+    /*background image source from https://www.pexels.com/photo/close-up-photo-of-donuts-2955820/ */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-card2 .cat-img {
+    background-image: url("https://i.ibb.co/NVP9rBK/cakes-category.jpg"); 
+    /*background image source from https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/ */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-card3 .cat-img {
+    background-image: url("https://i.ibb.co/xCrjmzT/tarts-category.jpg"); 
+    /*background image source from https://1freewallpapers.com/blueberry-tarts */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product-card1 .card-details,
+.product-card2 .card-details,
+.product-card3 .card-details{
+   padding-top: 20px;
+}
+
+.card-details h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.card-details h5 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.card-details a {
+    color: #FF6700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.card-details a:hover {
+    color: #FFEACE;
+}
+
+#our-selection .section-cta { 
+    text-align: center;
+    margin-top:50px;
+}
+
+/*Menu page specific style changes*/
+
+.menu .product-cards {
+    width: 270px;
+    height:380px;
+    margin-bottom: 25px;
+}
+
+.menu-card1 .cat-img,
+.menu-card2 .cat-img,
+.menu-card3 .cat-img,
+.menu-card4 .cat-img,
+.menu-card5 .cat-img,
+.menu-card6 .cat-img {
+    height:270px;
+}
+
+.menu-card1 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card2 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card3 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card4 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card5 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card6 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Product item images*/
+.prod-donuts {
+     background-image: url("https://i.ibb.co/tcq17jR/donut-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/photo-of-chocolate-donuts-3656118/ */
+}
+
+.prod-vanilla {
+    background-image: url("https://i.ibb.co/cCppPPp/vanilla-product.jpg"); 
+    /*background image source from https://dfuukapb8h94d.cloudfront.net/wp-content/uploads/2017/11/09222422/Passionfruit-Vanilla-Slice_WEB.jpg */
+}
+
+.prod-randy {
+ background-image: url("https://i.ibb.co/z4jKk4K/randy-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/close-up-photography-of-three-kiwi-topped-tarts-1157835/ */
+}
+
+.prod-custard {
+    background-image: url("https://i.ibb.co/nPB3frm/custard-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/delicious-portuguese-eggs-tart-on-paper-5677314/ */
+}
+
+.prod-raspberry {
+    background-image: url("https://i.ibb.co/sQ3YSjn/raspberry-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/slice-of-cake-with-raspberry-topping-3323686/ */
+}
+
+.prod-apple {
+     background-image: url("https://i.ibb.co/5rDypJ8/apple-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/brown-pie-on-tray-3223494/ */
+}
+
+.menu-card1 .card-details,
+.menu-card2 .card-details,
+.menu-card3 .card-details,
+.menu-card4 .card-details,
+.menu-card5 .card-details,
+.menu-card6 .card-details{
+   padding-top: 20px;
+}
+
+/*Weekly Specials page specific style changes*/
+
+.specials .subtitle {
+    width:80%;
+    margin: 20px auto;
+}
+
+.specials span.discount {
+    font-family: Arvo;
+    color: #000000;
+}
+
+.specials .product-cards {
+    height:400px;
+}
+
+.specials .card-details .oprice {
+    text-decoration: line-through;
+    text-decoration-color: #FF6700;
+}
+
+.specials .sprice span {
+    font-family: Arvo;
+    color: #FF6700;
+    font-size: 22px;
+    letter-spacing: 2px
+}
+
+/*Homepage: Hear the people out styling*/
+#hear-the-people {
+    background-color: #005B48;
+    text-align: center;
+}
+
+#hear-the-people .pacifico-title {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:5px;
+    margin-top: 20px;
+    max-width: 60%;
+}
+
+.testi {
+    width: 260px;
+    height: 260px;
+    background-color: #004839;
+    border:3px solid #FF6700;
+    border-radius: 200px;
+    position: relative;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.testi h4 {
+    position: absolute;
+    top: 76px;
+    left: 47px;
+    width: 200px;
+    color: #FFEACE;
+    line-height: 30px;
+}
+
+/*Homepage: Get updates styling*/
+#get-updates {
+    background-color: #F2F2F2;    
+}
+
+#get-updates .section-heading{
+    margin-bottom: 40px;
+}
+
+#get-updates .section-form {
+    text-align: center;
+}
+
+#get-updates input[type=text] {
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 1px solid #005B48;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+#get-updates input[type=submit] {
+    margin-top: 20px;
+}
+
+/*Product item page styling*/
+
+#product-item {
+    background-color: #F2F2F2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.prod-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.prod-flex-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+
+.prod-flex-item .img-col {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    margin-right: 20px;
+    
+}
+
+.prod-flex-item .desc-col{
+    margin-top: 45px;
+}
+
+.desc-col h6 {
+    letter-spacing: 2px;
+    color: #005B48;
+}
+
+.desc-col p {
+    line-height: 2.3em;
+}
+
+.desc-col a.special-deal {
+    text-decoration: none;
+    font-size: 18px;
+    color:#FFFFFF;
+    background-color: #005B48;
+    padding:5px 4px;
+}
+
+.desc-col a.special-deal:hover {
+    background-color: #FF6700;
+}
+
+.desc-col .info {
+    max-width: 85%;
+    margin-top:4.7em;
+    line-height: 1.5em;
+}
+
+.desc-col .section-cta {
+    margin-top: 1em;
+}
+
+.other-prods {
+    background-color: #FFFFFF;
+}
+
+.other-prods .subtitle {
+    color:#005B48;
+}
+
+/*About page styling*/ 
+
+#about-section, .spacer {
+    background-color: #F2F2F2;
+}
+
+#about-section .med-width-content {
+    margin: 0 auto;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+
+#about-section h1 {
+    color:  #FF6700;
+    text-align: center;
+}
+
+#about-section p {
+    font-size: 18px;
+    line-height: 35px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+#about-section img {
+    max-width: 90%;
+}
+
+#about-section .img-frame {
+    max-width: 50%;
+    border: 5px solid #005B48;
+    padding: 50px 30px;
+}
+
+.our-customers h6 {
+    color: #FFFFFF;
+}
+
+.our-customers h4 {
+    padding-top: 34px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    line-height: 1.5em;
+}
+
+.our-customers .testi {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #F2F2F2;
+    position: relative
+}
+
+.our-customers .testi img {
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.spacer {
+   height: 100px;
+}
+
+/*Order confirmation page styling*/
+
+#confirmation-section h1{
+    padding-top: 100px;
+    color: #FF6700;
+} 
+
+#confirmation-section p {
+    padding-top: 15px;
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+
+#confirmation-section .section-cta {
+    height: 100px;
+    background-color: #005B48; 
+    padding-top: 40px;
+    margin-top: 100px;
+    
+}
+
+#confirmation-section .section-cta .white-solid {
+    margin-right: 10px;
+}
+
+#confirmation-section .section-cta .orange-solid {
+    margin-left: 10px
+}
+
+/*Responsive styling for mobile devices*/
+@media only screen and (max-width: 768px) {
+    
+    #about-section img {
+        max-width: 100%;
+    }
+
+    #about-section .img-frame {
+        max-width: 100%;
+        border: none;
+        padding: 0px;
+    }
+
+    .menu .product-cards {
+        width: 240px;
+        height:380px;
+        margin-bottom: 25px;
+    }
+    
+    .menu-card1 .cat-img,
+    .menu-card2 .cat-img,
+    .menu-card3 .cat-img,
+    .menu-card4 .cat-img,
+    .menu-card5 .cat-img,
+    .menu-card6 .cat-img {
+        height:240px;
+    }
+    .card-details h2 {
+        font-size: 22px;
+    }
+
+    .card-details h5 {
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    
+    .prod-flex-container, .prod-flex-item {
+        display: block;
+    }
+    
+    .prod-flex-item .img-col {
+        height: 300px;
+        background-size: cover !important;
+        margin-right: 0px;
+    }
+    .desc-col .info {
+        margin-top:1.5em;
+    }
+    
+    #hero-section {
+        height: 350px;
+    }
+    
+    #hero-section .right-side {
+        display: none;
+    }
+    
+    #hero-section .left-side {
+        position: static;
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+        line-height: 2em;
+    }
+    
+    .left-side .subtitle {
+        margin-top: 20px;
+    }
+    
+    .testimonial-container {
+        max-width: 100%;
+    }
+    
+    #hear-the-people button {
+        margin-top: 20px;
+    }
+    
+    .footer-container {
+       display: block;
+    }
+    
+    .foot-col {
+        margin-bottom: 20px;
+    }
+}
+
+
+    

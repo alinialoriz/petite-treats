@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <!-- hero banner -->
+    <div id="hero-section" class="full-width-content">
+        <div class="left-side">
+            <h2 class="title">Welcome to </h2>
+            <img src="static/img/assets/logo-trans.png" alt="logo image">
+            <h3 class="subtitle">Traditional Australian baked goods with a modern twist. Baking since 2012.</h4>
+            <a href="/menu"><button class="cta white-solid">Shop the menu</button></a>
+        </div>
+        <div class="right-side">
+            <!-- img src="https://i.ibb.co/dbL5p6V/hero-img.jpg" alt=" banner img sourced from https://www.pexels.com/photo/pastries-on-tray-1129510/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels " -->
+        </div>
+    </div>
+    <!-- our selection: sample products -->
+    <div id="our-selection" class="full-width-content">
+        <div class="section-heading">
+            <h6 class="title">Our Selection</h6>
+            <h3 class="subtitle">There's something for everyone</h4>
+        </div>
+        <div class="section-products">
+            <div class="product-cards product-card1">
+                <a href="/menu">
+                    <div class="card-contents">
+                    <div class="cat-img"></div>
+                      <!-- img src="https://i.ibb.co/TTvbmbv/donut-category.jpg" alt="image source from https://www.pexels.com/photo/close-up-photo-of-donuts-2955820/ " -->
+                    <div class="card-details">
+                        <h2>Donuts</h2>
+                        <h5><a href="/menu">See more > </a></h5>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-cards product-card2">
+                <a href="/menu">
+                    <div class="card-contents">
+                    <div class="cat-img"></div>
+                     <!-- img src="https://i.ibb.co/NVP9rBK/cakes-category.jpg" alt="image source from https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/" -->
+                    <div class="card-details">
+                        <h2>Cakes</h2>
+                        <h5><a href="/menu">See more > </a></h5>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            <div class="product-cards product-card3">
+                <a href="/menu">
+                    <div class="card-contents">
+                    <div class="cat-img"></div>
+                    <!-- img src="https://i.ibb.co/xCrjmzT/tarts-category.jpg" alt="image source from https://1freewallpapers.com/blueberry-tarts" -->
+                    <div class="card-details">
+                        <h2>Tarts</h2>
+                        <h5><a href="/menu">See more ></a></h5>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="section-cta">
+            <a href="/menu"><button class="cta orange-solid">Shop the menu</button></a>
+        </div>
+    </div>
+    <!-- hear the people out: customer testimonial -->
+    <div id="hear-the-people" class="full-width-content">
+        <p class="pacifico-title">Hear the people out</p>
+        <div class="testimonial-container center">
+            <div class="testi first">
+                <h4>&ldquo;Petite Treats has the best cheesecake I&#39;ve ever had. Always fresh, and melts in the mouth. Would recommend highly!&rdquo;</h4>
+            </div>
+            <div class="testi second">
+                <h4>&ldquo;I&#39;m addicted to the Danish pastries and always drop in here on my way to work.&rdquo;</h4>
+            </div>
+        </div>
+        <a href="/about"><button class="cta white-solid">Find out more</button></a>
+    </div>
+    <!-- get the latest updates: signup form -->
+     <div id="get-updates" class="full-width-content">
+        <div class="section-heading">
+            <h6 class="title">Get the latest updates</h6>
+            <h3 class="subtitle">Be the first to hear about our weekly specials!</h3>
+            <a href="/newsletter"><button class="cta orange-solid">Join Newsletter</button></a>
+        </div>
+    </div>
+{% endblock %}

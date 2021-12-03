@@ -1,0 +1,1510 @@
+  /**/
+  * {
+      margin: 0;
+      padding: 0;
+    }
+    
+  html {
+      overflow-x: hidden !important;
+  }
+  body {
+      background-color: #F2F2F2;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  
+  /* Remove default html and body margins */
+  
+  .menu-page, .specials, #about-section, .contact, 
+  #product-item, #confirmation-section, #newsletter {
+    margin-top: 56px !important;
+    }
+  
+  .full-width-content {
+      max-width:100%;
+      padding-left: 50px;
+      padding-right: 50px;
+      position: relative;
+  }
+  
+  .med-width-content {
+      max-width:60%;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: 0 auto;
+  }
+  
+  .subtitle {
+      margin-top:10px;
+      letter-spacing: 3px
+  }
+  
+  .center {
+      text-align: center;
+      margin: 0 auto;
+  }
+  /* Set font family */
+  
+  h1, .pacifico-title {
+      font-family: Pacifico;
+      font-weight: normal;
+      text-decoration: none;
+  }
+  
+  h2 {
+      font-family: Quicksand;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+  }
+  
+  h3, li, button, input[type=submit], .input-alert {
+      font-family: Quicksand;
+      font-weight: 600;
+  }
+  
+  h4 {
+      font-family: Quicksand;
+      font-weight: 500;
+  }
+  
+  h5, input[type=text], input[type=email],
+  input[type=date], .contact textarea#message, select, form .input-label  {
+      font-family: Quicksand;
+      font-weight: 400;
+  }
+  
+  h6 {
+      font-family: Arvo;
+      font-weight: 700;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+  }
+  
+  p {
+      font-family: Quicksand;
+      font-weight: 300;
+  }
+
+  /* Set font sizes */
+  
+  footer h2, footer p  {
+      font-size: 1em;
+  }
+  
+  footer .pacifico-title {
+      font-size: 1.4em;
+  }
+  
+  /* Set text-transform */
+  button, input[type=submit], li {
+      text-transform: uppercase;
+  }
+  
+  /* Set button styling*/
+  .cta {
+      width: 218px;
+      height: 60px;
+      border-radius: 30px;
+      letter-spacing: 2px;
+  }
+  
+  button, input[type=submit] {
+      font-size: 1em;
+  }
+  
+  .white-solid {
+      background-color: #FFFFFF;
+      color: #FF6700;
+      border: none;
+  }
+  
+  .orange-solid {
+      border: 2px solid #FF6700;
+      background: #FF6700;
+      color: #FFFFFF;
+  }
+  
+  .white-solid:hover{
+      background: #FF6700;
+      color: #FFFFFF;
+      cursor: pointer;
+  }
+  
+  .orange-solid:hover {
+      border: 2px solid #FF6700;
+      background-color: transparent;
+      color: #FF6700;
+      cursor: pointer;
+  }
+  
+  *:focus {
+      outline: 0 !important;
+  }
+  
+  ::placeholder{ 
+     color: black;
+    opacity: 1;
+    font-weight: 400;
+  }
+  
+  /* Nav bar and Footer styling*/
+  .nav, footer {
+    background-color: #E8B78E;
+  }
+  
+  .nav {
+    height: 56px;
+    padding-top: 5px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+
+  hr {
+      border: none;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+    margin-left: 50px;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    background: #005B48;
+    padding: 3.3px 31px;
+    border-radius: 50px;
+    font-size: 25px;
+    letter-spacing: 3.5px;
+  }
+  .nav > .nav-header > .nav-title:hover {
+    background: #FF6700;
+    cursor: pointer;
+  }
+  
+  .nav-title a {
+      color: #FFFFFF ;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 16px;
+    letter-spacing: 3.5px;
+    margin-right: 35px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 12px 13px 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Quicksand;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .nav > .nav-links > a:hover {
+    border-bottom: 2px solid #FF6700;
+    color: #005B48;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  footer {
+   bottom: 0;
+  }
+  
+ .footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:80px 0px; 
+    line-height: 35px;
+    width: 99%;
+  }
+  
+  footer a, footer h2, footer p {
+      color: #005B48;
+  }
+  
+  footer p {
+      font-weight: 400;
+  }
+  
+  footer a {
+      text-decoration: none;
+  }
+  
+  footer a:hover {
+      text-decoration: none;
+      color: #FF6700;
+      cursor: pointer;
+  }
+
+  /* Home page: Hero banner styling */
+  #hero-section {
+      background: #FFEACE;
+      height: 500px;
+      position: relative;
+      margin-top: 57px;
+  }
+  
+  #hero-section .left-side, #hero-section > div.left-side {
+      position: absolute;
+      left: 50px;
+      top: 28%;
+      width: 37%;
+      text-align: left;
+  }
+   
+  .left-side .title {
+      display: inline-block;
+      font-size: 37px;
+      color: #005B48;
+  }
+  .left-side .subtitle {
+      margin-top: 6px;
+      margin-bottom: 21px;
+      line-height: 32px;
+  }
+  
+  .left-side img {
+      width: 230px;
+      vertical-align: bottom;
+      display: inline-block;
+      margin-bottom: -8px;
+  }
+  
+  #hero-section .right-side {
+      position: absolute;
+      left: 51%;
+      width: 46%;
+      height: 500px;
+      background-image: url("https://i.ibb.co/dbL5p6V/hero-img.jpg"); 
+      /*banner img sourced from https://www.pexels.com/photo/pastries-on-tray-1129510/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels */
+      background-color: #FFEACE;
+      background-position: center;
+      background-repeat: no-repeat; 
+      background-size: cover;
+  }
+  
+  .subtitle {
+      font-size: 22px;
+  }
+      
+  /* Home page: Our selection, Hear the people and Get updates styling */
+  #our-selection,
+  #hear-the-people,
+  #get-updates {
+      padding-top:50px;
+      padding-bottom:50px;
+  }
+  
+  #our-selection .section-heading,
+  #hear-the-people .pacifico-title,
+  #get-updates .section-heading {
+      text-align: center;
+  }
+  
+  #hear-the-people .pacifico-title, h1 {
+      letter-spacing: 4px;
+  }
+  
+  .section-heading h6 {
+      color: #005B48;
+  }
+  
+  .section-heading h3 {
+      color: #FF6700;
+  }
+  
+  /*Home page- Our selection, Menu page and Weekly Specials*/
+  
+  .section-products {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-top: 45px;
+  }
+  
+  .product-cards{
+      position: relative;
+      width:300px;
+      height: 384px;
+      background-color: #005B48;
+      padding:10px;
+      margin: 10px;
+      font-size: 30px;
+  }
+  
+  .product-cards:hover{
+      background-color: #E8B78E;
+      cursor: pointer;
+  }
+  
+  .card-contents {
+      position: absolute;
+      width: inherit;
+  }
+  
+  .product-card1 .cat-img,
+  .product-card2 .cat-img,
+  .product-card3 .cat-img {
+      height:300px;
+  }
+  
+  .product-card1 .cat-img {
+      background-image: url('https://i.ibb.co/TTvbmbv/donut-category.jpg'); 
+      /*background image source from https://www.pexels.com/photo/close-up-photo-of-donuts-2955820/ */
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  
+  .product-card2 .cat-img {
+      background-image: url("https://i.ibb.co/NVP9rBK/cakes-category.jpg"); 
+      /*background image source from https://www.pexels.com/photo/baked-cake-with-candies-on-top-709841/ */
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  
+  .product-card3 .cat-img {
+      background-image: url("https://i.ibb.co/xCrjmzT/tarts-category.jpg"); 
+      /*background image source from https://1freewallpapers.com/blueberry-tarts */
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  
+  .product-card1 .card-details,
+  .product-card2 .card-details,
+  .product-card3 .card-details{
+     padding-top: 20px;
+  }
+  
+  .card-details h2 {
+      font-size: 24px;
+      color: #FFFFFF;
+      text-transform: capitalize;
+  }
+  
+  .card-details h5 {
+      font-size: 20px;
+      color: #FFFFFF;
+      letter-spacing: 1.5px;
+  }
+  
+  .card-details a {
+      color: #FF6700;
+      font-size: 16px;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+  }
+  
+  .card-details a:hover {
+      color: #FFEACE;
+  }
+  
+  #our-selection .section-cta { 
+      text-align: center;
+      margin-top:50px;
+  }
+
+/*Menu page specific style changes*/
+
+
+
+.menu .product-cards {
+    width: 317px;
+    height:424px;
+    margin-bottom: 25px;
+}
+
+.menu-card1 .cat-img,
+.menu-card2 .cat-img,
+.menu-card3 .cat-img,
+.menu-card4 .cat-img,
+.menu-card5 .cat-img,
+.menu-card6 .cat-img {
+    height:318px;
+}
+
+.menu-card1 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card2 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card3 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card4 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card5 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu-card6 .cat-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Product item images*/
+.prod-donuts {
+     background-image: url("https://i.ibb.co/tcq17jR/donut-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/photo-of-chocolate-donuts-3656118/ */
+}
+
+.prod-vanilla {
+    background-image: url("https://i.ibb.co/cCppPPp/vanilla-product.jpg"); 
+    /*background image source from https://dfuukapb8h94d.cloudfront.net/wp-content/uploads/2017/11/09222422/Passionfruit-Vanilla-Slice_WEB.jpg */
+}
+
+.prod-randy {
+ background-image: url("https://i.ibb.co/z4jKk4K/randy-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/close-up-photography-of-three-kiwi-topped-tarts-1157835/ */
+}
+
+.prod-custard {
+    background-image: url("https://i.ibb.co/nPB3frm/custard-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/delicious-portuguese-eggs-tart-on-paper-5677314/ */
+}
+
+.prod-raspberry {
+    background-image: url("https://i.ibb.co/sQ3YSjn/raspberry-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/slice-of-cake-with-raspberry-topping-3323686/ */
+}
+
+.prod-apple {
+     background-image: url("https://i.ibb.co/5rDypJ8/apple-product.jpg"); 
+    /*background image source from https://www.pexels.com/photo/brown-pie-on-tray-3223494/ */
+}
+
+.menu-card1 .card-details,
+.menu-card2 .card-details,
+.menu-card3 .card-details,
+.menu-card4 .card-details,
+.menu-card5 .card-details,
+.menu-card6 .card-details{
+   padding-top: 20px;
+}
+
+#our-selection > div.section-heading > h2 {
+    font-size: 2em;
+}
+
+/*Weekly Specials page specific style changes*/
+
+
+.specials .subtitle {
+    width:80%;
+    margin: 20px auto;
+}
+
+.specials span.discount {
+    font-family: Arvo;
+    color: #000000;
+}
+
+.specials .product-cards {
+    height:430px;
+}
+
+.specials .card-contents {
+    position: relative;
+}
+
+
+.specials .card-details .oprice {
+    text-decoration: line-through;
+    text-decoration-color: #FF6700;
+}
+
+.specials .sprice span {
+    font-family: Arvo;
+    color: #FF6700;
+    font-size: 22px;
+    letter-spacing: 2px
+}
+
+/*Homepage: Hear the people out styling*/
+#hear-the-people {
+    background-color: #005B48;
+    text-align: center;
+}
+
+#hear-the-people .pacifico-title {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:5px;
+    margin-top: 20px;
+    max-width: 60%;
+}
+
+.testi {
+    width: 268px;
+    height: 259px;
+    background-color: #004839;
+    border:3px solid #FF6700;
+    border-radius: 200px;
+    position: relative;
+    padding:20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.testi h4 {
+    position: absolute;
+    width: 200px;
+    color: #FFEACE;
+    line-height: 27px;
+    letter-spacing: 1.2px;
+}
+
+.testi.first h4 {
+    top: 48px;
+    left: 54px;
+}
+
+.testi.second h4 {
+    top: 73px;
+    left: 54px;
+}
+
+/*Homepage: Get updates styling*/
+#get-updates {
+    background-color: #F2F2F2;    
+}
+
+#get-updates button {
+    margin-top: 35px;
+}
+
+
+/*Product item page styling*/
+
+#product-item {
+    background-color: #F2F2F2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.prod-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.prod-flex-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+
+.prod-flex-item .img-col {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    margin-right: 20px;
+    
+}
+
+.prod-flex-item .desc-col{
+    margin-top: 45px;
+}
+
+.desc-col h6 {
+    letter-spacing: 2px;
+    color: #005B48;
+}
+
+.desc-col p {
+    line-height: 2.3em;
+}
+
+.desc-col a.special-deal {
+    text-decoration: none;
+    font-size: 18px;
+    color:#FFFFFF;
+    background-color: #005B48;
+    padding:5px 4px;
+}
+
+.desc-col a.special-deal:hover {
+    background-color: #FF6700;
+}
+
+.desc-col .info {
+    max-width: 85%;
+    margin-top:4.7em;
+    line-height: 1.5em;
+}
+
+.desc-col .section-cta {
+    margin-top: 1em;
+}
+
+.other-prods {
+    background-color: #FFFFFF;
+}
+
+.other-prods .subtitle {
+    color:#005B48;
+}
+
+/*About page styling*/ 
+
+
+#about-section .med-width-content {
+    margin: 0 auto;    
+    padding-top: 60px;
+    padding-bottom: 50px;
+   
+}
+
+#about-section h1 {
+    color:  #FF6700;
+    text-align: center;
+}
+
+#about-section p {
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+#about-section img {
+    max-width: 90%;
+}
+
+#about-section .img-frame {
+    max-width: 80%;
+    min-width: 70%;
+    background-color: #005B48;
+    padding: 30px 20px;
+}
+
+.our-customers h6 {
+    color: #FFFFFF;
+}
+
+.our-customers h3 {
+    color: #FFFFFF;
+    line-height: 1.5em;
+    width: 60%;
+    margin:12 auto;
+    color: #FF6700;
+}
+
+.our-customers .testi {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #F2F2F2;
+    position: relative
+}
+
+.our-customers .testi img {
+    width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+
+.spacer {
+   height: 100px;
+}
+
+/*Order confirmation page styling*/
+
+#confirmation-section .med-width-content {
+    height: auto;
+}
+
+#confirmation-section h1{
+    padding-top: 80px;
+    color: #FF6700;
+} 
+
+#confirmation-section p {
+    padding-top: 15px;
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+
+#confirmation-section .section-cta {
+    height: 100px;
+    background-color: #005B48; 
+    padding-top: 40px;
+    margin-top: 100px;
+    
+}
+
+#confirmation-section .section-cta .white-solid {
+    margin-right: 10px;
+}
+
+#confirmation-section .section-cta .orange-solid {
+    margin-left: 10px
+}
+
+#confirmation-section .cta {
+    width: 267px;
+}
+
+#confirmation-section span.name{
+    text-transform: capitalize;
+}
+
+.submission-summary {
+    width: 70%;
+    margin: 40px auto;
+    padding: 36px 25px 37px 25px;
+    background-color: white;
+    border: 2px solid #005B48;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.submission-summary h6 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: center;   
+}
+
+.submission-summary .info {
+    width:65%;
+    margin: 0 auto;
+    
+}
+
+.submission-summary .input-field {
+    font-weight: 400;
+}
+
+.submission-summary .total-price {
+    font-weight: 600;
+    background: #ffeace;
+    padding: 10px 0px;
+}
+
+.submission-summary .message {
+    font-weight: 400;
+    padding-top:25px !important;
+    color: #FF670B;
+}
+    
+/*Contact and Newsletter forms styles*/
+
+.form {
+    text-align: left;
+}
+
+.form-group {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-group.submit {
+    text-align: center;
+}
+
+.form-group {
+    margin-top:12px;
+}
+
+.input-label {
+    font-size: 22px;
+}
+
+.bday, .consent {
+    margin-top: 28px;    
+}
+
+.input-field {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.contact form{
+    margin-top: 30px;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.contact, #newsletter {
+    padding-top:15px;
+}
+
+.contact h6, #newsletter h6 {
+    color: #005B48;
+    text-align: center;
+    margin: 50px 0px 15px 0px;
+    letter-spacing: 2px;
+}
+
+.contact p {
+    margin: 0 0px 10px;
+    margin-left: 0px!important;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact input, #item-name, #item-price,
+#name, #email, .bday input {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd78;
+    padding: 10px;
+    border-radius: 50px;
+}
+.contact textarea#message {
+    width: 100%;
+    height: 122px;
+    border: 1px solid #dddddd78;
+    border-radius: 20px;
+    padding: 12px 8px;
+}
+
+.contact input#submit {
+    margin-top: 25px;
+}
+
+.contact input#submit, #newsletter input[type=submit] {
+    border: 2px solid #FF6700;
+    background: #FF6700;
+    color: #FFFFFF;
+    width: 218px;
+    height: 60px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.contact input[type=submit]:hover, #newsletter input[type=submit]:hover{
+    background-color: transparent !important;
+    color: #FF6700 !important;
+    cursor: pointer;
+}
+
+/*Newsletter*/
+
+#newsletter .section-form {
+    text-align: center;
+}
+
+#newsletter form {
+    margin-top: 50px;
+}
+
+ #newsletter input[type=submit] {
+     margin-top: 30px;
+ }
+ 
+ #newsletter p {
+    margin: 0 auto 20px auto;
+ }
+ 
+ #newsletter select {
+    border-radius: 50px !important;
+    border: 1px solid #dddddd78;
+    padding: 10px 10px !important;
+    height: auto !important;
+    width: 100% !important;
+ }
+
+.form-group .dob-m {
+    width: 63%;
+    display: inline-block;
+}
+
+.form-group .dob-d {
+    width:35%;
+    display: inline-block;
+}
+
+.agree label {
+    font-weight: 600;
+    color: #005b48;
+}
+
+.input-alert {
+    color:  #e3644d;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+
+/***************************************************************************
+                               Responsive Styles
+***************************************************************************/
+
+
+/*Responsive styling for medium devices*/
+@media only screen and (max-width: 768px) {
+    
+    body, .full-width-content {
+        overflow-x: hidden !important;
+    }
+
+    .nav > .nav-header {
+    margin-left: 20px !important;
+    }
+    
+        .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 46px;
+      padding: 15px 12px 0px 13px;
+    }
+    .nav > .nav-btn > label:hover, .nav > .nav-links > a:hover{
+      background-color: #FF6700;
+    }
+    
+     .nav > .nav-links > a:hover {
+     border-bottom: none !important;
+     color: #F2F2F2 !important;
+      }
+    
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+      margin: 0 auto;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      margin-top: 10px;
+      z-index: 10 !important;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      padding: 25px 12px 25px 12px !important;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: auto;
+      overflow-y: auto;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    
+    .footer-container {
+    padding: 39px 0px !important;
+    line-height: 24px !important;
+    }
+    
+    #about-section img {
+        max-width: 100%;
+    }
+
+    #about-section .img-frame {
+        max-width: 100%;
+        border: none;
+        padding: 0px;
+    }
+    
+    .product-cards, 
+    .menu .product-cards {
+        width: 240px;
+        
+    }
+    
+    .product-cards { 
+        height: 320px;
+    }
+    
+    .menu .product-cards {
+        height:380px;
+        margin-bottom: 25px;
+    }
+    
+    .product-card1 .cat-img, 
+    .product-card2 .cat-img, 
+    .product-card3 .cat-img,
+    .menu-card1 .cat-img,
+    .menu-card2 .cat-img,
+    .menu-card3 .cat-img,
+    .menu-card4 .cat-img,
+    .menu-card5 .cat-img,
+    .menu-card6 .cat-img {
+        height:240px;
+    }
+    .card-details h2 {
+        font-size: 22px;
+    }
+
+    .card-details h5 {
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    
+    .prod-flex-container, .prod-flex-item {
+        display: block;
+    }
+    
+    .prod-flex-item .img-col {
+        height: 300px;
+        background-size: cover !important;
+        margin-right: 0px;
+    }
+    .desc-col .info {
+        margin-top:1.5em;
+    }
+    
+    #hero-section {
+        height: auto !important;
+    }
+    
+    #hero-section .right-side {
+        display: none;
+    }
+    
+    #hero-section .left-side {
+        position: static !important;
+        width: 100% !important;
+        padding-top: 40px;
+        padding-bottom: 45px;
+        text-align: center !important;
+        line-height: 2em;
+    }
+    
+    .left-side .subtitle {
+        margin-top: 20px;
+    }
+    
+    .testimonial-container {
+        max-width: 100%;
+    }
+    
+    #hear-the-people button {
+        margin-top: 20px;
+    }
+    
+    .footer-container {
+       display: block;
+       width: 100% !important;
+       text-align: center;
+    }
+    
+    .foot-col {
+        margin-bottom: 20px;
+    }
+    
+    .med-width-content {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    
+    .our-customers .testi {
+    width: 100px;
+    height: 100px;
+    }
+    
+    .our-customers .testi img {
+    width: 84px;
+    top: 25px;
+    left: 29px;
+    }
+    
+    .our-customers h3 {
+    width: 78%;
+    font-size: 16px;
+    }
+    
+    .specials .menu .product-cards {
+        height: 360px;
+    }
+    
+    .menu-page .card-details h2 {
+    font-size: 17px;
+    }
+    
+    .menu-page .menu .product-cards {
+    height: 340px;
+    }
+}
+
+
+/*Responsive styling for small devices*/
+@media only screen and (max-width: 550px) {
+    .full-width-content {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+    
+    #hero-section .left-side {
+    padding-top: 95px !important;
+    padding-bottom: 100px !important;
+    }
+    
+    .left-side .title {
+    font-size: 25px
+    }
+    
+    .left-side img {
+    width: 270px;
+    margin-top: -10px;
+    }
+    
+    .left-side .subtitle {
+    margin-top: 40px !important;
+    margin-bottom: 59px;
+    font-size: 16px;
+    line-height: 25px;
+    
+    }  
+    
+    .testi {
+    width: 220px;
+    height: 220px;
+    border-radius: 0px;
+    font-size: 18px;
+    }
+    
+    .testi.first {
+    margin-bottom: 35px;
+    }
+    
+    .testi.first h4 {
+    top: 46px;
+    left: 29px;
+    }
+    
+    .testi.second h4 {
+    top: 73px;
+    left: 29px;
+    }
+    
+    .section-heading h6 {
+    font-size: 25px;
+    }
+    
+    .section-heading h3 {
+    font-size: 16px;
+    }
+    
+    .card-details a {
+    font-size: 14px;
+    }
+    
+    .product-cards, .menu .product-cards {
+    width: 230px;
+    }
+    
+    .product-card1 .card-details, .product-card2 .card-details, .product-card3 .card-details {
+    padding-top: 0px;
+    }
+    
+    .product-cards {
+    height: 295px;
+    }
+    
+    #hear-the-people .pacifico-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 29px;
+    }
+    
+    .footer-container {
+     line-height: 17px !important;
+    }
+    
+    footer a, footer h2, footer p {
+    font-size: 14px;
+    }
+    
+    #about-section h1 {
+    font-size: 28px;
+    line-height: 34px;
+    }
+    
+    #about-section p {
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    }
+    
+    .our-customers h3 {
+    width: 90%;
+    font-size: 14px;
+    margin-top: 37px;
+    margin-bottom: 45px;
+    }
+    
+    .spacer {
+    height: 0px;
+    }
+    
+    .specials .title {
+    margin: 36px auto 0px auto;
+    width: 78%;
+    }
+    
+    .specials .subtitle {
+    width: 85%;
+    margin: 40px auto 65px auto;
+    }
+    
+    .specials .card-details h2 {
+    font-size: 20px;
+    }
+    
+    .specials .card-details h5 {
+    font-size: 15px;
+    }
+    
+    .specials .sprice span {
+    font-size: 18px;
+    }
+    
+    .specials .menu .product-cards {
+    height: 330px;
+    }
+    
+     .menu-card1 .card-details,
+     .menu-card2 .card-details,
+     .menu-card3 .card-details,
+     .menu-card4 .card-details, 
+     .menu-card5 .card-details, 
+     .menu-card6 .card-details {
+    padding-top: 10px;
+    }
+    
+    .menu-page .menu .product-cards {
+    height: 324px;
+    }
+    
+    .menu-page .card-details h2 {
+    font-size: 16px;
+    }
+    
+    .contact h6, #newsletter h6 {
+        font-size: 22px;
+    }
+    
+    .form-group {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    .contact input, #item-name,
+    #item-price, #name, #email, 
+    .contact textarea#message,
+    #newsletter select, .bday{
+    width: 100% !important;
+    }
+    
+    .text-danger {
+    width: 82%;
+    }
+    
+    #product-item {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    }
+    
+    .prod-flex-item .img-col {
+    height: 250px;
+    }
+    
+    .prod-flex-item .desc-col {
+    margin-top: 19px;
+    }
+    
+    .desc-col h6 {
+    font-size: 20px;
+    }
+    
+    .desc-col a.special-deal {
+    font-size: 16px;
+    }
+    
+    .desc-col .info {
+    margin-top: 15px;
+    font-size: 15px;
+    }
+    
+    #our-selection > div.section-heading > h2 {
+    font-size: 20px;
+    }
+    
+    #confirmation-section h1 {
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 29px;
+    }
+    
+    #confirmation-section p {
+    font-size: 16px;
+    padding-top: 10px;
+    }
+    
+    .submission-summary {
+    width:80%;
+    margin: 50px auto;
+    padding: 22px 15px 22px 15px;
+    }
+    
+    .submission-summary h6{
+    font-size: 18px;
+    }
+    
+    .submission-summary .info {
+    width: 100%;
+    font-size: 15px !important;
+    }
+
+    #confirmation-section .section-cta {
+     height: auto;
+     margin-top: 0px;
+     margin-bottom: 50px;
+     padding: 40px 0px;
+    }
+    
+    #confirmation-section .section-cta .white-solid {
+    margin-right: 0px; 
+    }
+    
+    #confirmation-section .cta {
+    margin-bottom: 16px;
+    }
+    
+    .contact h6, #newsletter h6 {
+    margin: 40px 0px -11px 0px;
+    }
+    
+    .contact form {
+    padding: 0px 0px;
+    }
+    
+    .input-label {
+    font-size: 18px;
+    }
+    
+    .bday, .consent {
+    margin-top:18px;
+    }
+
+}
+
+/*Responsive styling for extra-small devices*/
+@media only screen and (max-width: 300px) {
+    
+    .full-width-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    .left-side img {
+    width: 230px;
+    }
+    
+    .product-cards, .menu .product-cards {
+    width: 190px;
+    }
+    
+    .card-details h2 {
+    margin-top: 4px;
+    }
+    
+    .product-cards {
+    height: 241px;
+    }
+    
+    .product-card1 .cat-img, 
+    .product-card2 .cat-img, 
+    .product-card3 .cat-img, 
+    .menu-card1 .cat-img, 
+    .menu-card2 .cat-img, 
+    .menu-card3 .cat-img, 
+    .menu-card4 .cat-img, 
+    .menu-card5 .cat-img, 
+    .menu-card6 .cat-img {
+    height: 190px;
+    }
+    
+    .testi {
+    border: none;
+    width: 175px;
+    height: 212px;
+    }
+    
+    .testi.first h4 {
+    top: 45px;
+    left: 10px;
+    }
+    
+    .testi.second h4 {
+    top: 73px;
+    left: 11px;
+    }
+    
+    .menu-page .menu .product-cards {
+    height: 281px;
+    }
+    
+    .specials .card-details h2 {
+    font-size: 19px;
+    }
+    
+    .specials .menu .product-cards {
+    height: 274px;
+    }
+
+}
